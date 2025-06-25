@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Previa 3D Model</title>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-color: #ffffff;
+      }
+
+      model-viewer {
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <model-viewer
+      src="previa.glb"
+      alt="Previa 3D Model"
+      auto-rotate
+      camera-controls
+      ar
+      camera-target="0m 0m 0m"
+      shadow-intensity="2"
+    >
+    </model-viewer>
+  </body>
+</html>
